@@ -1212,5 +1212,26 @@ body {
 .not-loaded * {
   animation-play-state: paused !important;
 }
+/* ADD THIS TO THE END OF YOUR css/style.css FILE */
+#mute-toggle {
+    position: fixed; /* Keep it in the same place even if the user scrolls (though they can't in this case) */
+    bottom: 20px;    /* 20 pixels from the bottom edge */
+    right: 20px;     /* 20 pixels from the right edge */
+    z-index: 100;    /* Ensure it sits on top of all other elements */
+    padding: 10px 20px;
+    background-color: #ff99aa; /* Soft color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+#mute-toggle:hover {
+    background-color: #ff6688; /* Darker on hover */
+}
 
 /*# sourceMappingURL=style.css.map */
